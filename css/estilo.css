@@ -5,6 +5,25 @@ body {
 	font-family:Verdana, Geneva, sans-serif;
 }
 
+/* Font Face */
+
+@font-face {
+    font-family: 'Gotham-Black';
+    src: url('../fonts/Gotham-Black.otf') format('opentype');
+    src: local(Gotham-Black), url("../fonts/Gotham-Black.otf"); 
+}
+@font-face {
+    font-family: 'Gotham-Book';
+    src: url('../fonts/Gotham-Book.otf') format('opentype');
+    src: local(Gotham-Book), url("../fonts/Gotham-Book.otf"); 
+}
+@font-face {
+    font-family: 'Gotham-Medium';
+    src: url('../fonts/Gotham-Medium.otf') format('opentype');
+    src: local(Gotham-Medium), url("../fonts/Gotham-Medium.otf"); 
+}
+
+
 /* ---------- Header ---------- */
 
 
@@ -19,6 +38,10 @@ header {
 	position:relative;
 	margin-right:auto;
 	margin-left:auto;
+}
+
+h1 {
+    font-family: "Gotham-Medium", sans-serif;
 }
 
 /* ---------- encabezado ---------- */
