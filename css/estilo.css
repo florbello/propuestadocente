@@ -69,26 +69,24 @@ h1 {
 
 /* ---------- mural ---------- */
 
-.mural {
+/*.mural {
 	background-image: url(../img/mural.jpg);
 	background-repeat:round;
 	height:270px;
-}
+}*/
 
 /* ---------- menú principal ---------- */
 
 nav{
 	position:relative;
 	display:block;
-	width:80%;
+	width:70%;
 	height:50px;
-	padding-top:30px;
+	padding: 20px 0;
 	text-align:center;
 	line-height:normal;
 	z-index:1000;
-	margin-top: 0;
-	margin-bottom: 0;
-	margin-left:250px;
+    margin: 0 auto;
 }
 
 nav ul{
@@ -100,8 +98,6 @@ nav ul{
 
 nav ul li{
 	float:left;
-	margin-right:45px;
-	padding-right:45px;
 }
 
 nav ul li li{
@@ -115,13 +111,11 @@ nav ul li li{
 	font-size:1.1em;
 }
 
-nav ul li a{
-	display:block;
-	margin:0;
-	padding:0;
-	color:#fff;
-	background-color:transparent;
-	text-decoration:none;
+li a {
+    display: inline-block;
+    color:#fff;
+    padding: 20px 30px;
+    text-decoration:none;
 }
 	
 nav ul li a:hover {
@@ -176,6 +170,11 @@ nav li.last{
 	margin-left:auto;
 	padding-bottom:20px;
 	padding-top:30px;
+    color: #039;
+}
+
+.iconos i {
+    margin: 0 3px;
 }
 
 .intro {
