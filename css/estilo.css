@@ -257,6 +257,12 @@ nav li.last{
     position: relative;
 }
 
+.niveles {
+    height: 215px;
+    width: 50%;
+    float: left;
+}
+
 /* ---------- niveles ---------- */
 
 .titulos {
@@ -267,11 +273,6 @@ nav li.last{
 	font-variant:small-caps;
 	font-weight:lighter;
 	letter-spacing: 0.06em;
-}
-
-.uno {
-	width:50%;
-	float:left;
 }
 
 .inicial {
@@ -288,7 +289,7 @@ nav li.last{
 	background: linear-gradient(to bottom, #9929A9 5%, #606 50%);
 }
 
-.info1 {
+.info-niveles {
 	float:left;
 	position:relative;
 	padding:35px 30px 30px 30px;
@@ -296,11 +297,6 @@ nav li.last{
 	margin-top:0px;
 	margin-bottom:0px;
 	background-color:#F2F2F2;
-}
-
-.dos {
-	width:50%;
-	float:right;
 }
 
 .primerciclo {
@@ -317,11 +313,6 @@ nav li.last{
 	background: linear-gradient(to bottom, #68CCDD 5%, #09F 50%);
 }
 
-.tres {
-	width:50%;
-	float:left;
-}
-
 .segundociclo {
 	position:relative;
 	background-color:#E01B78;
@@ -336,22 +327,10 @@ nav li.last{
 	background: linear-gradient(to bottom, #EB52B1 5%, #E01B78 50%);
 }
 
-.info2 {
-	float:right;
-	position:relative;
-  	padding:35px 30px 30px 30px;
-	font-size:0.8em;
-	background-color:#E2E2E2;
-	margin-top:0px;
-	margin-bottom:0px;
-}
-
 .educacionvial {
-	width:50%;
 	position:relative;
-	float:right;
 	background-color:#039;
-	padding-bottom:48px;
+	padding-bottom:13px;
 }
 
 
@@ -405,44 +384,29 @@ footer p {
 
 /* ---------- Flechas ---------- */
 
+.caret:before {
+    content: "";
+    position: absolute;
+    bottom: -23px;
+    left: 70px;
+    width: 0;
+    height: 0;
+    border-width: 25px 25px 0;
+    border-style: solid;  
+    z-index:10;
+}
+
 .abajo-derechainicial:before {
-                content: "";
-                position: absolute;
-                bottom: -25px;
-                left: 70px;
-                width: 0;
-                height: 0;
-                border-width: 25px 25px 0;
-                border-style: solid;
-                border-color: #606 transparent transparent;
-				z-index:10;
-            }
+    border-color: #606 transparent transparent;
+}
 			
 .abajo-derechaprimero:before {
-                content: "";
-                position: absolute;
-                bottom: -25px;
-                left: 70px;
-                width: 0;
-                height: 0;
-                border-width: 25px 25px 0;
-                border-style: solid;
-                border-color: #09F transparent transparent;
-				z-index:10;
-            }		
+    border-color: #09F transparent transparent;
+}		
 
 .abajo-derechasegundo:before {
-                content: "";
-                position: absolute;
-                bottom: -25px;
-                left: 70px;
-                width: 0;
-                height: 0;
-                border-width: 25px 25px 0;
-                border-style: solid;
-                border-color: #E01B78 transparent transparent;
-				z-index:10;
-            }				
+    border-color: #E01B78 transparent transparent;
+}				
 				
 
 /* ---------- Helper Classes ---------- */
@@ -475,6 +439,9 @@ footer p {
 /* ---------- efectos ---------- */
 
 .img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
     opacity: 0.9;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
