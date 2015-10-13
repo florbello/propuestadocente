@@ -1,8 +1,7 @@
-@charset "ISO-8859-1";
 /* CSS Document */
 
 body {
-	font-family:Verdana, Geneva, sans-serif;
+	font-family:'Gotham-Book', Verdana, sans-serif;
 }
 
 /* Font Face */
@@ -40,7 +39,7 @@ header {
 	margin-left:auto;
 }
 
-h1 {
+h1,h2 {
     font-family: "Gotham-Medium", sans-serif;
 }
 
@@ -66,14 +65,6 @@ h1 {
 	text-transform:uppercase;
 	font-weight:lighter;
 }
-
-/* ---------- mural ---------- */
-
-/*.mural {
-	background-image: url(../img/mural.jpg);
-	background-repeat:round;
-	height:270px;
-}*/
 
 /* ---------- menú principal ---------- */
 
@@ -102,8 +93,7 @@ nav ul li{
 
 nav ul li li{
 	display:block;
-	float:none;
-	margin:0;
+	margin:0px 30px 0px 0px;
 	padding:0;
 	border:none;
 	text-align:left;
@@ -121,14 +111,12 @@ li a {
 nav ul li a:hover {
 	color:#006;
 	font-size: 1.0em;
-	position:static;
+	font-weight:bold;
 }
 
 nav ul li li a{
-	width:150px;
-	padding:7px 10px;
-	text-size:1.0em;
-	font-weight:normal;
+	width:170px;
+	padding:15px 15px;
 	font-variant:small-caps;
 	color:#333;
 	background-color:#F4F4F4;
@@ -137,7 +125,6 @@ nav ul li li a{
 nav ul li li a:hover{
 	color:#FFF;
 	background-color:#E01B78;
-	font-size: 1.0em;
 }
 
 nav ul ul{
@@ -150,7 +137,7 @@ nav ul ul{
 
 nav ul li:hover ul{
 	left:auto;
-	padding-top:10px;
+	padding-top:0px;
 }
 
 nav li.last{
@@ -187,14 +174,13 @@ nav li.last{
 	width:50%;
 	margin-right:auto;
 	margin-left:auto;
-	padding:60px;
+	padding-top:50px;
 }
 
 .intro h2 {
 	text-align:center;
 	font-size:1.4em;
 	font-variant:small-caps;
-	color: #039;
 	margin-bottom:35px;
 }
 
@@ -216,7 +202,7 @@ nav li.last{
 	color:#FFF;
 	font-size:0.95em;
 	text-transform:uppercase;
-	padding:141px 10px 140px 30px;
+	padding:120px 10px 140px 30px;
 }
 
 .objetivos {
@@ -253,17 +239,16 @@ nav li.last{
 }
 
 /* -------- Sections --------- */
+
 .enseniar-educacion-vial {
     position: relative;
 }
 
 .niveles {
-    height: 215px;
+    height: 220px;
     width: 50%;
     float: left;
 }
-
-/* ---------- niveles ---------- */
 
 .titulos {
 	color:#FFF;
@@ -292,11 +277,11 @@ nav li.last{
 .info-niveles {
 	float:left;
 	position:relative;
-	padding:35px 30px 30px 30px;
+	padding:35px 30px 40px 30px;
 	font-size:0.8em;
 	margin-top:0px;
 	margin-bottom:0px;
-	background-color:#F2F2F2;
+	background-color:#EAEAEA;
 }
 
 .primerciclo {
@@ -330,7 +315,6 @@ nav li.last{
 .educacionvial {
 	position:relative;
 	background-color:#039;
-	padding-bottom:13px;
 }
 
 
@@ -419,6 +403,25 @@ footer p {
 	float: right;
 }
 
+.gray {
+	background-color:#E2E2E2;
+}
+
+.blue {
+	color:#039;
+}
+
+.violet {
+	color:#606;
+}
+
+pink {
+	color:#E01B78;
+}
+
+light-blue {
+	color:#09F;
+}
 
 /* ---------- clear ---------- */
 
@@ -514,64 +517,12 @@ footer p {
 /* ---------- para qué, qué, cómo ---------- */
 
 .para {
-	width:28.9%;
+	width:28.87%;
 	float:left;
 	background-color:#6421A0;
 	position:relative;
 	padding:30px;
 }
 
-.abajo-derechapara:before {
-                content: "";
-                position: absolute;
-                bottom: -25px;
-                left: 70px;
-                width: 0;
-                height: 0;
-                border-width: 25px 25px 0;
-                border-style: solid;
-                border-color: #6421A0 transparent transparent;
-				z-index:10;
-            }
 
-.que {
-	width:28.85%;
-	float:left;
-	background-color:#8F2C81;
-	position:relative;
-	padding:30px;
-}
 
-.abajo-derechaque:before {
-                content: "";
-                position: absolute;
-                bottom: -25px;
-                left: 70px;
-                width: 0;
-                height: 0;
-                border-width: 25px 25px 0;
-                border-style: solid;
-                border-color: #8F2C81 transparent transparent;
-				z-index:10;
-            }
-
-.como {
-	width:28.9%;
-	float:left;
-	background-color:#6421A0;
-	position:relative;
-	padding:30px;
-}
-
-.abajo-derechacomo:before {
-                content: "";
-                position: absolute;
-                bottom: -25px;
-                left: 70px;
-                width: 0;
-                height: 0;
-                border-width: 25px 25px 0;
-                border-style: solid;
-                border-color: #6421A0 transparent transparent;
-				z-index:10;
-}
