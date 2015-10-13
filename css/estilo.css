@@ -207,8 +207,9 @@ nav li.last{
 
 .destacado {
 	width:30%;
-	float:left;
+    height: 100%;
 	background-color:#039;
+    position: absolute;
 }
 
 .destacado h2 {
@@ -219,24 +220,41 @@ nav li.last{
 }
 
 .objetivos {
-	width:70%;
+	width:68%;
 	background-color:#E2E2E2;
-	float:right;
-	padding-top:30px;
-	padding-bottom:30px;
+    padding: 30px 0 30px 32%;
 	font-size:0.9em;
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    -webkit-column-gap: 0.3em;
+    -moz-column-gap: 0.3em;
+    column-gap: 0.3em;
 }
 
-.texto1 {	
-	width:45%;
-	margin-left:50px;
-	float:left;
+.objetivos p {
+    padding: 0 30px;
+    text-align: justify;
+    word-spacing: -1px;
 }
 
-.texto2 {	
-	width:45%;
-	margin-right:40px;
-	float:right;
+.objetivos p:before {
+    content: "\f00c";
+    font-family: FontAwesome;
+    margin-left: -25px;
+    left: -5px;
+    position: relative;
+    display: inline-block;
+    color: #039;
+}
+
+.objetivos p:first-child {
+    margin-top: 0;
+}
+
+/* -------- Sections --------- */
+.enseniar-educacion-vial {
+    position: relative;
 }
 
 /* ---------- niveles ---------- */
