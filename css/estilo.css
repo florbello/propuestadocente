@@ -317,12 +317,11 @@ nav li.last{
 	background-color:#039;
 }
 
+/* ---------- videos ---------- */
 
 .videos {
 	width:100%;
-	float:left;
 	background-color:#000;
-	height:40%; /* -- sacar height cuando ponga los videos -- */
 	background:
 	radial-gradient(black 15%, transparent 16%) 0 0,
 	radial-gradient(black 15%, transparent 16%) 8px 8px,
@@ -351,6 +350,17 @@ nav li.last{
 	padding:10px 80px 20px 80px;
 }
   
+.video-wrapper {
+	width:100%;
+	margin-right:auto;
+	margin-left:auto;
+	padding-bottom:30px;
+}
+
+.video-youtube {
+	float:left;
+	padding:10px;
+}
 /* ---------- footer ---------- */
 
 footer {
@@ -383,6 +393,10 @@ footer p {
 .abajo-derechainicial:before {
     border-color: #606 transparent transparent;
 }
+
+.abajo-derechainicial2:before {
+    border-color: #813674 transparent transparent;
+}
 			
 .abajo-derechaprimero:before {
     border-color: #09F transparent transparent;
@@ -413,6 +427,10 @@ footer p {
 
 .violet {
 	color:#606;
+}
+
+.light-violet {
+	background-color:#813674;
 }
 
 pink {
@@ -516,13 +534,23 @@ light-blue {
 
 /* ---------- para qué, qué, cómo ---------- */
 
-.para {
-	width:28.87%;
-	float:left;
-	background-color:#6421A0;
-	position:relative;
-	padding:30px;
+.para-wrapper {
+	width:100%;
+	margin-right:auto;
+	margin-left:auto;
 }
 
+.para {
+	width:33.3%;
+	float:left;
+}
 
+.paraque {
+	background-color:#606;
+	position:relative;
+}
 
+.paraque2 {
+	background-color:#813674;
+	position:relative;
+}
