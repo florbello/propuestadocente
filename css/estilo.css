@@ -66,7 +66,7 @@ h1,h2 {
 	font-weight:lighter;
 }
 
-/* ---------- menú principal ---------- */
+/* ---------- menÃº principal ---------- */
 
 nav{
 	position:relative;
@@ -149,7 +149,7 @@ nav li.last{
 
 /* ---------- CUERPO ---------- */
 
-/* ---------- introducción ---------- */
+/* ---------- introducciÃ³n ---------- */
 
 .iconos {
 	text-align:center;
@@ -282,6 +282,7 @@ nav li.last{
 	margin-top:0px;
 	margin-bottom:0px;
 	background-color:#EAEAEA;
+	text-align: justify;
 }
 
 .primerciclo {
@@ -321,23 +322,22 @@ nav li.last{
 
 .videos {
 	width:100%;
-	background-color:#000;
 	background:
-	radial-gradient(black 15%, transparent 16%) 0 0,
-	radial-gradient(black 15%, transparent 16%) 8px 8px,
+	radial-gradient(black 15%, transparent 15%) 0 0,
+	radial-gradient(black 15%, transparent 15%) 8px 8px,
 	radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
 	radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
-	background-color: #000;
+	background-color:#171717;
 	background-size:16px 16px;
 }
 
-.videos h1 {
+.videos h2 {
 	text-align:center;
 	margin-right:auto;
 	margin-left:auto;
 	color:#FFF;
 	font-size:1.3em;
-	padding:40px 10px 10px 10px;
+	padding:60px 10px 10px 20px;
 	font-variant:small-caps;
 	font-weight:lighter;
 	letter-spacing: 0.06em;
@@ -345,22 +345,22 @@ nav li.last{
 
 .videos p {
 	color:#FFF;
-	margin-right:auto;
-	margin-right:auto;
-	padding:10px 80px 20px 80px;
+	padding:20px;
+	margin:10px 100px; 
 }
   
 .video-wrapper {
-	width:100%;
+	width:85%;
 	margin-right:auto;
 	margin-left:auto;
-	padding-bottom:30px;
+	padding-bottom:60px;
 }
 
 .video-youtube {
 	float:left;
-	padding:10px;
+	padding:25px;
 }
+
 /* ---------- footer ---------- */
 
 footer {
@@ -390,22 +390,21 @@ footer p {
     z-index:10;
 }
 
-.abajo-derechainicial:before {
+.flecha-uno:before {
     border-color: #606 transparent transparent;
 }
-
-.abajo-derechainicial2:before {
-    border-color: #813674 transparent transparent;
-}
 			
-.abajo-derechaprimero:before {
+.flecha-dos:before {
     border-color: #09F transparent transparent;
 }		
 
-.abajo-derechasegundo:before {
+.flecha-tres:before {
     border-color: #E01B78 transparent transparent;
 }				
-				
+
+.flecha-cuatro:before {
+    border-color: #813674 transparent transparent;
+}				
 
 /* ---------- Helper Classes ---------- */
 
@@ -532,17 +531,56 @@ light-blue {
 	background-image:linear-gradient(to bottom,#3cb0fd,#3498db);
 }
 
-/* ---------- para qué, qué, cómo ---------- */
+.boton-propu {
+	-moz-box-shadow: none;
+	-webkit-box-shadow: inset 0px 1px 3px 0px #7e5485;
+	box-shadow: inset 0px 1px 3px 0px #7e5485;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.05, #606), color-stop(1, #644278));
+	background: -moz-linear-gradient(top, #606 5%, #644278 100%);
+	background: -webkit-linear-gradient(top, #606 5%, #644278 100%);
+	background: -o-linear-gradient(top, #606 5%, #644278 100%);
+	background: -ms-linear-gradient(top, #606 5%, #644278 100%);
+	background: linear-gradient(to bottom, #606 5%, #644278 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#8d6d8f', endColorstr='#644278',GradientType=0);
+	background-color: #606;
+	border: 1px solid #4E2257;
+	display: inline-block;
+	cursor: pointer;
+	color: #fff;
+	font-size: 1.2em;
+	padding: 10px 22px;
+	text-decoration: none;
+	margin: 30px;
+}
+.boton-propu:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #644278), color-stop(1, #606));
+	background:-moz-linear-gradient(top, #644278 5%, #606 100%);
+	background:-webkit-linear-gradient(top, #644278 5%, #606 100%);
+	background:-o-linear-gradient(top, #644278 5%, #606 100%);
+	background:-ms-linear-gradient(top, #644278 5%, #606 100%);
+	background:linear-gradient(to bottom, #644278 5%, #606 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#644278', endColorstr='#8d6d8f',GradientType=0);
+	background-color:#644278;
+}
+.boton-propu:active {
+	position:relative;
+	top:1px;
+}
 
-.para-wrapper {
+
+/* ---------- para quÃ©, quÃ©, cÃ³mo ---------- */
+
+
+.razones-wrapper {
 	width:100%;
 	margin-right:auto;
 	margin-left:auto;
 }
 
-.para {
+.razones {
 	width:33.3%;
 	float:left;
+	margin:0;
 }
 
 .paraque {
@@ -554,3 +592,13 @@ light-blue {
 	background-color:#813674;
 	position:relative;
 }
+
+/* ---------- propuestas ---------- */
+
+.propuestas {
+	margin-right:auto;
+	margin-left:auto;
+	width:100%;
+	padding:50px 30px;
+}
+
